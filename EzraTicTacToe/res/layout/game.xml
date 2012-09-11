@@ -1,0 +1,119 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/txtplayerone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:layout_toLeftOf="@layout/game"
+            android:text="Player 1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtplayertwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtplayerone"
+            android:layout_below="@id/txtplayerone"
+            android:layout_marginTop="44dp"
+            android:text="Player 2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtXorOtop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtplayerone"
+            android:layout_marginLeft="61dp"
+            android:layout_toRightOf="@id/txtplayerone"
+            android:text="X"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtXorObottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtplayertwo"
+            android:layout_alignBottom="@id/txtplayertwo"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/txtplayertwo"
+            android:text="O"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtGamesWonX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txtXorOtop"
+            android:layout_alignBottom="@id/txtXorOtop"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/txtXorOtop"
+            android:text="Games Won"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtGamesWonO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtXorObottom"
+            android:layout_alignBottom="@+id/txtXorObottom"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/txtXorObottom"
+            android:text="Games Won"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtGameWonPlayOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtGamesWonX"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/txtGamesWonO"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtGameWonPlayTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtGamesWonO"
+            android:layout_alignBottom="@+id/txtGamesWonO"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/txtGamesWonX"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/ibCenterMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="197dp"
+            android:src="@drawable/vazio" />
+
+        <ImageButton
+            android:id="@+id/ibLeftMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ibCenterMiddle"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/ibCenterMiddle"
+            android:src="@drawable/vazio" />
+
+        <ImageButton
+            android:id="@+id/ibRightCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ibLeftMiddle"
+            android:layout_marginLeft="-40px"
+            android:layout_toRightOf="@+id/ibCenterMiddle"
+            android:src="@drawable/vazio" />
+
+    </RelativeLayout>
