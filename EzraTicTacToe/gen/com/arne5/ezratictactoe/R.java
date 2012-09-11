@@ -16,10 +16,16 @@ public final class R {
         public static final int vazio=0x7f020002;
     }
     public static final class id {
+        public static final int ibBottomLeft=0x7f07000b;
+        public static final int ibBottomMiddle=0x7f07000c;
+        public static final int ibBottomRight=0x7f07000d;
+        public static final int ibCenterLeft=0x7f070009;
         public static final int ibCenterMiddle=0x7f070008;
-        public static final int ibLeftMiddle=0x7f070009;
-        public static final int ibRightCenter=0x7f07000a;
-        public static final int menu_settings=0x7f07000b;
+        public static final int ibCenterRight=0x7f07000a;
+        public static final int ibTopLeft=0x7f07000f;
+        public static final int ibTopMiddle=0x7f07000e;
+        public static final int ibTopRight=0x7f070010;
+        public static final int menu_settings=0x7f070011;
         public static final int txtGameWonPlayOne=0x7f070006;
         public static final int txtGameWonPlayTwo=0x7f070007;
         public static final int txtGamesWonO=0x7f070005;
