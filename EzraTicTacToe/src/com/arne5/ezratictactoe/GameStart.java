@@ -2,6 +2,7 @@ package com.arne5.ezratictactoe;
 
 
 
+import android.R.bool;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -18,6 +19,7 @@ public class GameStart extends Activity implements OnClickListener{
 	ImageButton BTopLeft,BTopMiddle,BTopRight,BCenterLeft,BCenterMiddle,BCenterRight,BBottomLeft,BBottomMiddle,BBottomRight;
 	TextView TxtPlayerOne, TxtPlayerTwo, TxtxoroTop,TxtxoroBottom,TxtGamesWonPlayOne,TxtGamesWonPlayTwo;
 	Button btRestart, btQuit;
+	boolean playeroneturn;
 	
 	
     @Override
@@ -28,6 +30,7 @@ public class GameStart extends Activity implements OnClickListener{
     			WindowManager.LayoutParams.FLAG_FULLSCREEN);
         
 		setContentView(R.layout.game);
+		int playerturn=0;
 		initialize();
         
         
@@ -57,6 +60,14 @@ public class GameStart extends Activity implements OnClickListener{
     	TxtGamesWonPlayTwo = (TextView) findViewById(R.id.txtGameWonPlayTwo);
     	btRestart = (Button) findViewById(R.id.btRestart);
     	btQuit = (Button) findViewById(R.id.btQuit);
+    	playeroneturn = true;
+    	
+    	boolean isX;
+    	boolean isO;
+    	isX =false;
+    	isO = false;
+    	
+    	
     	
     			
     	
@@ -87,6 +98,21 @@ public class GameStart extends Activity implements OnClickListener{
 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
+		switch (v.getId()){
+		case R.id.ibTopLeft:
+			if (playeroneturn= true){
+				BTopLeft.setImageResource(R.drawable.cruz);
+				
+				
+				
+			}else{
+				
+				
+			
+			BTopLeft.setImageResource(R.drawable.bola);
+			}
+			
+		}
 		
 	}
 }
