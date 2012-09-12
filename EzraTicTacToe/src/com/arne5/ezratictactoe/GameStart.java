@@ -36,6 +36,34 @@ public class GameStart extends Activity implements OnClickListener{
     	//connect variables to the xml variables in the game xml
     	BTopLeft = (ImageButton) findViewById(R.id.ibTopLeft);
     	BTopLeft.setOnClickListener(this);
+    	BTopMiddle = (ImageButton) findViewById(R.id.ibTopMiddle);
+    	BTopMiddle.setOnClickListener(this);
+    	BTopRight = (ImageButton) findViewById(R.id.ibTopRight);
+    	BCenterLeft = (ImageButton) findViewById(R.id.ibCenterLeft);
+    	BCenterLeft.setOnClickListener(this);
+    	BCenterMiddle = (ImageButton) findViewById(R.id.ibCenterMiddle);
+    	BCenterMiddle.setOnClickListener(this);
+    	BCenterRight = (ImageButton) findViewById(R.id.ibCenterRight);
+    	BCenterRight.setOnClickListener(this);
+    	BBottomLeft = (ImageButton) findViewById(R.id.ibBottomLeft);
+    	BBottomLeft.setOnClickListener(this);
+    	BBottomMiddle = (ImageButton) findViewById(R.id.ibBottomMiddle);
+    	BBottomMiddle.setOnClickListener(this);
+    	BBottomRight = (ImageButton) findViewById(R.id.ibBottomRight);
+    	BBottomRight.setOnClickListener(this);
+    	TxtPlayerOne = (TextView) findViewById(R.id.txtplayerone);
+    	TxtPlayerTwo = (TextView) findViewById(R.id.txtplayertwo);
+    	TxtGamesWonPlayOne = (TextView) findViewById(R.id.txtGameWonPlayOne);
+    	TxtGamesWonPlayTwo = (TextView) findViewById(R.id.txtGameWonPlayTwo);
+    	btRestart = (Button) findViewById(R.id.btRestart);
+    	btQuit = (Button) findViewById(R.id.btQuit);
+    	
+    			
+    	
+    	
+    	
+    	
+    	
     	
     	
     }
