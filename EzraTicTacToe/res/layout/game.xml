@@ -23,7 +23,7 @@
             android:layout_marginTop="44dp"
             android:text="Player 2"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <TextView
             android:id="@+id/txtXorOtop"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_toRightOf="@id/txtplayerone"
             android:text="X"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <TextView
             android:id="@+id/txtXorObottom"
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:layout_toRightOf="@id/txtplayertwo"
             android:text="O"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <TextView
             android:id="@+id/txtGamesWonX"
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_toRightOf="@id/txtXorOtop"
             android:text="Games Won"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <TextView
             android:id="@+id/txtGamesWonO"
             android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
             android:layout_toRightOf="@+id/txtXorObottom"
             android:text="Games Won"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <TextView
             android:id="@+id/txtGameWonPlayOne"
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
             android:layout_toRightOf="@+id/txtGamesWonO"
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
+
         <TextView
             android:id="@+id/txtGameWonPlayTwo"
             android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
             android:layout_toRightOf="@+id/txtGamesWonX"
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
+
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterMiddle"
             android:layout_width="wrap_content"
@@ -95,95 +95,92 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="50dp"
-            android:layout_marginTop="197dp"
-            android:src="@drawable/vazio" />
-
+            android:layout_marginTop="197dp" />
+
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/ibCenterMiddle"
-            android:layout_marginRight="10px"
-            android:layout_toLeftOf="@+id/ibCenterMiddle"
-            android:src="@drawable/vazio" />
-
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ibCenterMiddle" />
+
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/ibCenterMiddle"
-            android:layout_marginLeft="-40px"
-            android:layout_toRightOf="@id/ibCenterMiddle"
-            android:src="@drawable/vazio" />
-
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@id/ibCenterMiddle" />
+
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/ibCenterLeft"
             android:layout_below="@id/ibCenterLeft"
-            android:layout_marginTop="10px"
-            android:src="@drawable/vazio" />
+            android:layout_marginTop="10dp" />
 
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/ibBottomLeft"
-            android:layout_alignRight="@+id/ibCenterMiddle"
-            android:src="@drawable/vazio" />
+            android:layout_alignRight="@+id/ibCenterMiddle" />
 
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ibCenterRight"
-            android:layout_alignTop="@+id/ibBottomMiddle"
-            android:src="@drawable/vazio" />
-
+            android:layout_alignTop="@+id/ibBottomMiddle" />
+
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibTopMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/ibCenterRight"
             android:layout_alignRight="@+id/ibCenterMiddle"
-            android:layout_marginBottom="10px"
-            android:src="@drawable/vazio" />
+            android:layout_marginBottom="10dp" />
+
+        <!--
+        android:src="@drawable/vazio"
+        this is what default image is set to
+        -->
 
         <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibTopLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ibCenterLeft"
-            android:layout_alignTop="@+id/ibTopMiddle"
-            android:src="@drawable/vazio" />
+            android:layout_alignTop="@+id/ibTopMiddle" />
 
-        <com.arne5.ezratictactoe.TicButton
-            android:id="@+id/ibTopRight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/ibTopMiddle"
-            android:layout_alignLeft="@+id/ibCenterRight"
-            android:src="@drawable/vazio" />
-
-        <Button
-            android:id="@+id/btRestart"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/txtGameWonPlayOne"
-            android:layout_alignBottom="@+id/txtGameWonPlayOne"
-            android:layout_alignLeft="@+id/ibTopRight"
-            android:text="Restart" />
-
         <Button
             android:id="@+id/btQuit"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/txtGameWonPlayTwo"
-            android:layout_alignBottom="@+id/txtGameWonPlayTwo"
-            android:layout_alignLeft="@+id/btRestart"
+            android:layout_alignRight="@+id/txtXorObottom"
+            android:layout_below="@+id/txtGameWonPlayTwo"
+            android:layout_marginTop="24dp"
             android:text="Quit" />
+
+        <Button
+            android:id="@+id/btRestart"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btQuit"
+            android:layout_alignBottom="@+id/btQuit"
+            android:layout_alignLeft="@+id/txtplayertwo"
+            android:text="Restart" />
+
+        <com.arne5.ezratictactoe.TicButton
+            android:id="@+id/ibTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ibTopMiddle"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/ibTopMiddle" />
 
     </RelativeLayout>
