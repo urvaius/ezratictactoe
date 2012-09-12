@@ -88,7 +88,7 @@
             android:text="0"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             android:layout_marginTop="197dp"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
             android:layout_toLeftOf="@+id/ibCenterMiddle"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibCenterRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:layout_toRightOf="@id/ibCenterMiddle"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
             android:layout_marginTop="10px"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             android:layout_alignRight="@+id/ibCenterMiddle"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibBottomRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
             android:layout_alignTop="@+id/ibBottomMiddle"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibTopMiddle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
             android:layout_marginBottom="10px"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibTopLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
             android:layout_alignTop="@+id/ibTopMiddle"
             android:src="@drawable/vazio" />
 
-        <ImageButton
+        <com.arne5.ezratictactoe.TicButton
             android:id="@+id/ibTopRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
