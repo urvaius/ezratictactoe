@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/stars"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/options" />
+
+    <ImageView
+        android:id="@+id/new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_above="@+id/options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/new_game" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/title" />
+
+    <ImageView
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignLeft="@+id/options"
+        android:layout_below="@+id/options"
+        android:layout_marginTop="97dp"
+        android:background="@drawable/quit" />
+
+</RelativeLayout>

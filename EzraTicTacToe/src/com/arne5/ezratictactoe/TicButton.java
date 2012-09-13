@@ -23,12 +23,17 @@ public class TicButton extends ImageButton{
 		super(context, attrs, defStyle);
 		
 	}
-	public boolean checkXorO(boolean check){
+	public boolean checkX(boolean xcheck){
 		//if true is x if false is o
 		
 		
-		return check;
+		return xcheck;
 		
+	}
+	public boolean checkO(boolean ocheck){
+		
+		
+		return ocheck;
 	}
 
 }

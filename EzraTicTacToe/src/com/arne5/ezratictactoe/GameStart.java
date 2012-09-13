@@ -129,23 +129,32 @@ public class GameStart extends Activity implements OnClickListener{
 			if (playeroneturn= true){
 				BTopLeft.setImageResource(R.drawable.cruz);
 				//try to do a check for x or o and set them
-				BTopLeft.checkXorO(true);				
+				BTopLeft.checkX(true);	
+				BTopLeft.checkO(false);
 					
 								
 			}else{			
 				
 			
 			BTopLeft.setImageResource(R.drawable.bola);
-			BTopLeft.checkXorO(false);
+			BTopLeft.checkX(false);
+			BTopLeft.checkO(true);
 			}
 			break;
 			
 		case R.id.ibTopRight:
 			if (playeroneturn = true){
+				
 				BTopRight.setImageResource(R.drawable.cruz);
+				
+				
+				BTopRight.checkX(true);	
+				BTopRight.checkO(false);
 				
 			}else{
 				BTopRight.setImageResource(R.drawable.bola);
+				BTopRight.checkX(false);	
+				BTopRight.checkO(true);
 			}
 			break;
 			
