@@ -87,7 +87,7 @@ public class GameStart extends Activity implements OnClickListener{
     	playeroneturn = true;
     	check =false;
     	
-    	
+    	//just to test commits
     	isX =false;
     	isO = false;
     	
