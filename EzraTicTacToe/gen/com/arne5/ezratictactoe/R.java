@@ -14,14 +14,16 @@ public final class R {
         public static final int bg_maple=0x7f020000;
         public static final int bola=0x7f020001;
         public static final int cruz=0x7f020002;
-        public static final int ic_action_search=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int new_game=0x7f020005;
-        public static final int options=0x7f020006;
-        public static final int quit=0x7f020007;
-        public static final int stars=0x7f020008;
-        public static final int title=0x7f020009;
-        public static final int vazio=0x7f02000a;
+        public static final int default_cross=0x7f020003;
+        public static final int default_dot=0x7f020004;
+        public static final int ic_action_search=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int new_game=0x7f020007;
+        public static final int options=0x7f020008;
+        public static final int quit=0x7f020009;
+        public static final int stars=0x7f02000a;
+        public static final int title=0x7f02000b;
+        public static final int vazio=0x7f02000c;
     }
     public static final class id {
         public static final int btQuit=0x7f070014;
