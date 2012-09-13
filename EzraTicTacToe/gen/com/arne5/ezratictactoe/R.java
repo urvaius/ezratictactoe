@@ -14,20 +14,32 @@ public final class R {
         public static final int bg_maple=0x7f020000;
         public static final int bola=0x7f020001;
         public static final int cruz=0x7f020002;
-        public static final int default_cross=0x7f020003;
-        public static final int default_dot=0x7f020004;
-        public static final int ic_action_search=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int new_game=0x7f020007;
-        public static final int options=0x7f020008;
-        public static final int quit=0x7f020009;
-        public static final int stars=0x7f02000a;
-        public static final int title=0x7f02000b;
-        public static final int vazio=0x7f02000c;
+        public static final int default_button=0x7f020003;
+        public static final int default_cross=0x7f020004;
+        public static final int default_dot=0x7f020005;
+        public static final int ic_action_search=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int new_game=0x7f020008;
+        public static final int options=0x7f020009;
+        public static final int quit=0x7f02000a;
+        public static final int scoreboard_bg=0x7f02000b;
+        public static final int stars=0x7f02000c;
+        public static final int title=0x7f02000d;
+        public static final int vazio=0x7f02000e;
     }
     public static final class id {
+        public static final int b1=0x7f070023;
+        public static final int b2=0x7f07001f;
+        public static final int b3=0x7f070022;
+        public static final int b4=0x7f07001e;
+        public static final int b5=0x7f07001c;
+        public static final int b6=0x7f070021;
+        public static final int b7=0x7f07001d;
+        public static final int b8=0x7f070024;
+        public static final int b9=0x7f070020;
         public static final int btQuit=0x7f070014;
         public static final int btRestart=0x7f070015;
+        public static final int btquit=0x7f070026;
         public static final int ibBottomLeft=0x7f07000f;
         public static final int ibBottomMiddle=0x7f070010;
         public static final int ibBottomRight=0x7f070011;
@@ -37,14 +49,16 @@ public final class R {
         public static final int ibTopLeft=0x7f070013;
         public static final int ibTopMiddle=0x7f070012;
         public static final int ibTopRight=0x7f070016;
+        public static final int layout_id=0x7f07001b;
         public static final int layout_root=0x7f070000;
-        public static final int menu_settings=0x7f07001b;
+        public static final int menu_settings=0x7f070027;
         public static final int new_game=0x7f070018;
         public static final int ok=0x7f070003;
         public static final int options=0x7f070017;
         public static final int p1name=0x7f070001;
         public static final int p2name=0x7f070002;
         public static final int quit=0x7f07001a;
+        public static final int scoreboard=0x7f070025;
         public static final int title=0x7f070019;
         public static final int txtGameWonPlayOne=0x7f07000a;
         public static final int txtGameWonPlayTwo=0x7f07000b;
@@ -60,6 +74,7 @@ public final class R {
         public static final int dialogname=0x7f030001;
         public static final int game=0x7f030002;
         public static final int greetings=0x7f030003;
+        public static final int main=0x7f030004;
     }
     public static final class menu {
         public static final int activity_game_start=0x7f060000;
