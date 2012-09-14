@@ -75,7 +75,7 @@ public class TicGame extends Activity{
 			if (iv.getId()== R.id.new_game){
 				showDialog(NAME_DIALOG_ID);
 			}
-			else if (iv.getId()== R.id.new_game){
+			else if (iv.getId()== R.id.options){
 				options_menu();
 				
 			}
