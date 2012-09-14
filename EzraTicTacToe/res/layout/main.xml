@@ -37,15 +37,6 @@
         android:tag="4" />
 
     <ImageButton
-        android:id="@+id/b2"
-        android:layout_width="100dip"
-        android:layout_height="100dip"
-        android:layout_alignTop="@+id/b7"
-        android:layout_toRightOf="@+id/b7"
-        android:src="@drawable/default_button"
-        android:tag="2" />
-
-    <ImageButton
         android:id="@+id/b9"
         android:layout_width="100dip"
         android:layout_height="100dip"
@@ -81,15 +72,6 @@
         android:src="@drawable/default_button"
         android:tag="1" />
 
-    <ImageButton
-        android:id="@+id/b8"
-        android:layout_width="100dip"
-        android:layout_height="100dip"
-        android:layout_alignTop="@+id/b1"
-        android:layout_toRightOf="@+id/b1"
-        android:src="@drawable/default_button"
-        android:tag="8" />
-
     <TextView
         android:id="@+id/scoreboard"
         android:layout_width="300dip"
@@ -118,5 +100,23 @@
         android:layout_marginBottom="76dp"
         android:layout_marginRight="58dp"
         android:text="Quit" />
+
+    <ImageButton
+        android:id="@+id/b2"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_above="@+id/b5"
+        android:layout_toLeftOf="@+id/b6"
+        android:src="@drawable/default_button"
+        android:tag="2" />
+
+    <ImageButton
+        android:id="@+id/b8"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_above="@+id/scoreboard"
+        android:layout_toLeftOf="@+id/b9"
+        android:src="@drawable/default_button"
+        android:tag="8" />
 
 </RelativeLayout>

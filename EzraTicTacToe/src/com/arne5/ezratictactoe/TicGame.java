@@ -114,6 +114,10 @@ public class TicGame extends Activity{
 			});
 			break;
 			
+		case HELP_DIALOG_ID:
+			break;
+			
+			
 		default:
 			mdialog = null;
 			
@@ -128,7 +132,7 @@ public class TicGame extends Activity{
 		return true;
 	}
 	// options selected
-	public boolean onOptoinsItemSelected(MenuItem item){
+	public boolean onOptionsItemSelected(MenuItem item){
 		if(item.getItemId()==0)  //new game
 			showDialog(NAME_DIALOG_ID);
 		else if(item.getItemId()==1)//options menu

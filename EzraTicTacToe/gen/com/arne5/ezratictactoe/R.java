@@ -28,18 +28,18 @@ public final class R {
         public static final int vazio=0x7f02000e;
     }
     public static final class id {
-        public static final int b1=0x7f070023;
-        public static final int b2=0x7f07001f;
-        public static final int b3=0x7f070022;
+        public static final int b1=0x7f070022;
+        public static final int b2=0x7f070025;
+        public static final int b3=0x7f070021;
         public static final int b4=0x7f07001e;
         public static final int b5=0x7f07001c;
-        public static final int b6=0x7f070021;
+        public static final int b6=0x7f070020;
         public static final int b7=0x7f07001d;
-        public static final int b8=0x7f070024;
-        public static final int b9=0x7f070020;
+        public static final int b8=0x7f070026;
+        public static final int b9=0x7f07001f;
         public static final int btQuit=0x7f070014;
         public static final int btRestart=0x7f070015;
-        public static final int btquit=0x7f070026;
+        public static final int btquit=0x7f070024;
         public static final int ibBottomLeft=0x7f07000f;
         public static final int ibBottomMiddle=0x7f070010;
         public static final int ibBottomRight=0x7f070011;
@@ -58,7 +58,7 @@ public final class R {
         public static final int p1name=0x7f070001;
         public static final int p2name=0x7f070002;
         public static final int quit=0x7f07001a;
-        public static final int scoreboard=0x7f070025;
+        public static final int scoreboard=0x7f070023;
         public static final int title=0x7f070019;
         public static final int txtGameWonPlayOne=0x7f07000a;
         public static final int txtGameWonPlayTwo=0x7f07000b;
