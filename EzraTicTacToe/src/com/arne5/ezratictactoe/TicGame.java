@@ -144,7 +144,6 @@ public class TicGame extends Activity{
 				
 
 				public void onClick(DialogInterface dialog, int id) {
-					// TODO Auto-generated method stub
 					
 				}
 
@@ -157,7 +156,7 @@ public class TicGame extends Activity{
 					
 					public void onClick(DialogInterface dialog, int which) {
 						finish();
-						// TODO Auto-generated method stub
+						
 						
 					}
 				});
@@ -327,7 +326,7 @@ public class TicGame extends Activity{
         //initiate computer chance during start of the game
         
         if((gametype ==1) && (count % 2 !=0))
-        	KindleGame();
+        	kindleGame();
         
         
 		
@@ -373,7 +372,7 @@ public class TicGame extends Activity{
 				}
 			}
 			else {
-				set-score(2);
+				set_score(2);
 				if (gametype ==0){ //human vs human
 					show_result("Wow " + player_name_2 + " wins!!");
 					
@@ -591,7 +590,182 @@ public class TicGame extends Activity{
 	    	}
 	    }
 	 
-	 
-	 
-	 
+	 public boolean easy_move_block(){
+		 boolean flag = false;
+		 int i,k =0;
+		 for (i =0; i<8;i++)
+			 if ((analysis_arr[i][0]== 0)&& (analysis_arr[i][1] == 2)){
+				 flag =true;
+				 break;
+			 }
+		 if (flag == true) {
+	    		// when position < 3, it is one of the 3 rows.
+	        	if (i < 3)	{
+	        		// search for the vacant position
+	        		for (int j = 0; j < 3; j++)
+	        			if (movearr[i][j] == 0) {
+	        				comp_play(i, j);
+	        				return true;
+	        			}
+	        	}
+	        	else if (i < 6) {
+	        		for (int j = 0; j < 3; j++)
+	        			if (movearr[j][i - 3] == 0) {
+	        				comp_play(j, (i - 3));
+	        				return true;
+	        			}
+	        	}
+	        	else if (i == 6) {
+	        		for (int j = 0; j < 3; j++) {
+	        			if (movearr[j][k] == 0) {
+	        				comp_play(j, k);
+	        				return true;
+	        			}
+	        			k++;
+	        		}
+	        	}
+	        	else if (i == 7) {
+	        		k = 2;
+	        		for (int j = 0; j < 3; j++) {
+	        			if (movearr[j][k] == 0) {
+	        				comp_play(j, k);
+	        				return true;
+	        			}
+	        			k--;
+	        		}
+	        	}
+	    	}
+	    	return false;	// false if easy move win is NOT available.
+	    }
+	 public boolean easy_move_win () {
+	    	boolean flag = false;		// temporary flag to indicate a (2,0) find.
+	    	int i, k = 0;		// k used for diagonal search.
+	    	// search analysis_arr for (2,0) combination.
+	    	for (i = 0; i < 8; i++)
+	    		if ((analysis_arr[i][0] == 2) && (analysis_arr[i][1] == 0)) {
+	    			flag = true;
+	    			break;
+	    		}
+	    	
+	    	if (flag == true) {
+	    		// when position < 3, it is one of the 3 rows.
+	        	if (i < 3)	{
+	        		// search for the vacant position
+	        		for (int j = 0; j < 3; j++)
+	        			if (movearr[i][j] == 0) {
+	        				comp_play(i, j);
+	        				return true;
+	        			}
+	        	}
+	        	else if (i < 6) {
+	        		for (int j = 0; j < 3; j++)
+	        			if (movearr[j][i - 3] == 0) {
+	        				comp_play(j, (i - 3));
+	        				return true;
+	        			}
+	        	}
+	        	else if (i == 6) {
+	        		for (int j = 0; j < 3; j++) {
+	        			if (movearr[j][k] == 0) {
+	        				comp_play(j, k);
+	        				return true;
+	        			}
+	        			k++;
+	        		}
+	        	}
+	        	else if (i == 7) {
+	        		k = 2;
+	        		for (int j = 0; j < 3; j++) {
+	        			if (movearr[j][k] == 0) {
+	        				comp_play(j, k);
+	        				return true;
+	        			}
+	        			k--;
+	        		}
+	        	}
+	    	}
+	    	return false;	// false if easy move win is NOT available.
+	    }
+	 // make kindle move
+	 public void comp_play (int x, int y) {
+	       	final ImageButton ib_tmp = (ImageButton) findViewById(R.id.b1);
+	       	int ib_id = ib_tmp.getId();		// initialize with 1st button's id.
+	       	
+	       	// set ib_id to exact ImageButton Id
+	       	if ((x == 0) && (y == 0)) {	
+	       		// ib_id same as initialized value.
+	       	}
+	       	else {
+	       		if (x == 0)
+	       			ib_id -= y;			// minus '-' : because id number not in proper order.
+	       		else if (x == 1)
+	       			ib_id += (3 - y);
+	       		else if (x == 2)
+	       			ib_id += (6 - y);	
+	       	}
+	       	
+	       	// bind new ib_id Image Button to variable ib.
+	       	final ImageButton ib = (ImageButton) findViewById (ib_id);
+	       	
+	       	// draw the symbol on the button
+	       	if (user_symbol == 0)
+	       		ib.setImageResource(cross);
+	       	else
+	       		ib.setImageResource(dot);
+	       	
+	       	// make the button un-clickable.
+	       	ib.setClickable(false);
+	   
+	       	// call the after_move function with the arguments.
+	       	after_move(ib);
+	    }
+	    
+	 public void analysis_array() {
+	    	
+	    	// initialize to zero every time this function is called.
+	    	for (int i = 0; i < 8; i++)
+	    		analysis_arr[i][0] = analysis_arr[i][1] = 0;
+	    	
+	    	// row-wise traversal and increment the value.
+	    	for (int i = 0; i < 3; i++)
+	    		for (int j = 0; j < 3; j++)
+	    			if (movearr[i][j] == 1) // 1 = player 1 : computer
+	    				analysis_arr[i][0] += 1;
+	    			else if(movearr[i][j] == 2) // 2 = player 2 : human
+	    				analysis_arr[i][1] += 1;
+	    	
+	    	
+	    	
+	    	// column-wise traversal and increment the value.
+	    	for (int i = 0; i < 3; i++)
+	    		for (int j = 0; j < 3; j++)
+	    			if (movearr[j][i] == 1) 			// 1 = player 1
+	    				analysis_arr[i + 3][0] += 1;
+	    			else if(movearr[j][i] == 2) 		// 2 = player 2, i + 3 to change index to refer to column.
+	    				analysis_arr[i + 3][1] += 1;
+	    	
+	    	
+	    	// diagonal 1 traversal.
+	    	int k = 0;
+	    	for (int i = 0; i < 3; i++) {
+	    		if (movearr[i][k] == 1)
+	    			analysis_arr[6][0] +=1;
+	    		else if (movearr[i][k] == 2)
+	    			analysis_arr[6][1] +=1;
+	    		k++;
+	    	}
+	    	
+	    	// diagonal 2 traversal.
+	    	// --> reset k to point to the 1st row, and last(3rd) element.
+	    	k = 2;						
+	    	for (int i = 0; i < 3; i++) {
+	    		if (movearr[i][k] == 1)
+	    			analysis_arr[7][0] +=1;
+	    		else if (movearr[i][k] == 2)
+	    			analysis_arr[7][1] +=1;
+	    		k--;
+	    	}
+	    		
+	    	// ------ end of analysis array initialization ------------- //
+	    }
 }
