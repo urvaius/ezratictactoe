@@ -95,11 +95,11 @@ public class TicGame extends Activity{
 		Dialog mdialog = new Dialog(this);
 		switch(id) {
 		case NAME_DIALOG_ID:
-			mdialog.setContentView(R.layout.dialogname);
+			mdialog.setContentView(R.layout.name_dialog_2);
 			mdialog.setTitle("Player Names");
 			mdialog.setCancelable(true);
-			final EditText p1name =(EditText) mdialog.findViewById(R.id.p1name);
-			final EditText p2name =(EditText) mdialog.findViewById(R.id.p2name);
+			final EditText p1name =(EditText) mdialog.findViewById(R.id.namep1);
+			final EditText p2name =(EditText) mdialog.findViewById(R.id.namep1);
 			
 			Button bOk = (Button) mdialog.findViewById(R.id.ok);
 			bOk.setOnClickListener(new OnClickListener() {
