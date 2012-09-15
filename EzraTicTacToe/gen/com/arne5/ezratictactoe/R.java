@@ -30,17 +30,16 @@ public final class R {
     }
     public static final class id {
         public static final int b1=0x7f07001c;
-        public static final int b2=0x7f070022;
+        public static final int b2=0x7f070021;
         public static final int b3=0x7f07001f;
         public static final int b4=0x7f07001b;
         public static final int b5=0x7f070019;
         public static final int b6=0x7f07001e;
         public static final int b7=0x7f07001a;
-        public static final int b8=0x7f070023;
+        public static final int b8=0x7f070022;
         public static final int b9=0x7f07001d;
         public static final int btQuit=0x7f070010;
         public static final int btRestart=0x7f070011;
-        public static final int btquit=0x7f070021;
         public static final int ibBottomLeft=0x7f07000b;
         public static final int ibBottomMiddle=0x7f07000c;
         public static final int ibBottomRight=0x7f07000d;
@@ -51,6 +50,7 @@ public final class R {
         public static final int ibTopMiddle=0x7f07000e;
         public static final int ibTopRight=0x7f070012;
         public static final int iv2player=0x7f070017;
+        public static final int ivQuit2=0x7f070023;
         public static final int layout_id=0x7f070018;
         public static final int layout_root=0x7f070024;
         public static final int menu_settings=0x7f070028;

@@ -91,16 +91,6 @@
         android:layout_marginTop="131dp"
         android:background="@drawable/title" />
 
-    <Button
-        android:id="@+id/btquit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/scoreboard"
-        android:layout_marginBottom="76dp"
-        android:layout_marginRight="58dp"
-        android:text="Quit" />
-
     <ImageButton
         android:id="@+id/b2"
         android:layout_width="100dip"
@@ -118,5 +108,14 @@
         android:layout_toLeftOf="@+id/b9"
         android:src="@drawable/default_button"
         android:tag="8" />
+
+    <ImageView
+        android:id="@+id/ivQuit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:src="@drawable/quit" />
 
 </RelativeLayout>

@@ -31,11 +31,13 @@ public class TicGameStart extends Activity {
         final ImageView iv_2player = (ImageView) findViewById(R.id.iv2player);
         
         
+        
         iv_new_game.setOnClickListener(welcome_listener);
         iv_options.setOnClickListener(welcome_listener);
         //iv_help.setOnClickListener(welcome_listener);
         iv_quit.setOnClickListener(welcome_listener);
         iv_2player.setOnClickListener(welcome_listener);
+        
         
         
         
@@ -425,8 +427,26 @@ public class TicGameStart extends Activity {
         final ImageButton b9 = (ImageButton) findViewById(R.id.b9);
         final ImageButton b8 = (ImageButton) findViewById(R.id.b8);
         final ImageButton b7 = (ImageButton) findViewById(R.id.b7);
-       // final Button bt_quit = (Button) findViewById(R.id.btquit);
-        // set the OnClickListeners.
+        ImageView ivquit2 =(ImageView) findViewById(R.id.ivQuit2);
+       
+        
+		// set the OnClickListeners.
+        
+        OnClickListener quit_listener = new View.OnClickListener() {
+        	
+        	public void onClick(View f) {
+        		final ImageView im = (ImageView) f;
+        		if (im.getId() == R.id.ivQuit2) {
+        			finish();
+        		}
+        		   		
+        		
+        	}
+        };
+        
+        
+        //see if dyes
+        ivquit2.setOnClickListener(quit_listener);
         b1.setOnClickListener(button_listener);
         b2.setOnClickListener(button_listener);
         b3.setOnClickListener(button_listener);
