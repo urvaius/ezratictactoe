@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_marginTop="250dp"
     android:background="@drawable/stars"
     android:orientation="vertical" >
 
@@ -21,32 +22,30 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="133dp"
         android:background="@drawable/quit1" />
-
+
     <ImageView
         android:id="@+id/options"
         android:layout_width="wrap_content"
         android:layout_height="60dip"
-        android:layout_above="@+id/quit"
-        android:layout_alignLeft="@+id/title"
-        android:layout_marginBottom="92dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
         android:background="@drawable/options1" />
-
+
     <ImageView
         android:id="@+id/iv2player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/options"
-        android:layout_alignLeft="@+id/options"
-        android:layout_marginBottom="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
         android:src="@drawable/player2play" />
-
+
     <ImageView
         android:id="@+id/new_game"
         android:layout_width="wrap_content"
         android:layout_height="60dip"
-        android:layout_alignLeft="@+id/title"
-        android:layout_below="@+id/title"
-        android:layout_marginTop="101dp"
+        android:layout_below="@drawable/ezratitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
         android:background="@drawable/player1" />
 
 </RelativeLayout>
