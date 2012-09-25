@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -21,8 +22,11 @@ public class TicGameStart extends Activity {
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
+	requestWindowFeature(Window.FEATURE_NO_TITLE);
+	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.greetings);
+        
         
         final ImageView iv_new_game = (ImageView) findViewById(R.id.new_game);
         final ImageView iv_options = (ImageView) findViewById(R.id.options);

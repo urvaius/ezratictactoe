@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     android:background="@drawable/stars"
     android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
     android:soundEffectsEnabled="true" >
 
     <!-- Don't change it to ImageView -->
