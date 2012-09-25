@@ -89,7 +89,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="131dp"
-        android:background="@drawable/title" />
+        android:background="@drawable/ezratitle" />
 
     <ImageButton
         android:id="@+id/b2"
@@ -113,9 +113,9 @@
         android:id="@+id/ivQuit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/title"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="53dp"
-        android:src="@drawable/quit" />
+        android:layout_below="@+id/scoreboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:src="@drawable/quit1" />
 
 </RelativeLayout>
