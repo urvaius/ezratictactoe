@@ -1,5 +1,7 @@
 package com.arne5.ezratictactoe;
 
+import com.arne5.ezratictactoe.R.raw;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -433,7 +435,9 @@ public class TicGameStart extends Activity {
         final ImageButton b8 = (ImageButton) findViewById(R.id.b8);
         final ImageButton b7 = (ImageButton) findViewById(R.id.b7);
         ImageView ivquit2 =(ImageView) findViewById(R.id.ivQuit2);
-       
+        //SoundMangler dSoundMangler = new SoundMangler();
+    	//dSoundMangler.soundInit(getBaseContext());        
+        //dSoundMangler.addSound(1, raw.cat2);
         
 		// set the OnClickListeners.
         
@@ -510,6 +514,9 @@ public class TicGameStart extends Activity {
     	CharSequence pos_str = "";				// position as a string.
     	int pos = 0;
     	boolean result = false;
+    	SoundMangler dSoundMangler = new SoundMangler();
+    	dSoundMangler.soundInit(getBaseContext());        
+        dSoundMangler.addSound(1, raw.cat2);
   
     	pos_str = (CharSequence) ib.getTag();	// get the position from the tag.
     	pos = (int) pos_str.charAt(0) - 48;		// char to integer conversion.
@@ -561,6 +568,8 @@ public class TicGameStart extends Activity {
     	}
     	else if ((result == false) && arr_isFull()) {
     		show_result("    Game Draw !    ");				// leave the space, or else dialog becomes cramped.
+    		dSoundMangler.playSound(1);
+    		
     		return;
     	}
     	
