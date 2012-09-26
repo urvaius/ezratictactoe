@@ -26,6 +26,7 @@ public class CopyOfTicGameStart extends Activity {
 	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.greetings);
+        //working need t send up
         
         //test for more graphics etc
         final ImageView iv_new_game = (ImageView) findViewById(R.id.new_game);
