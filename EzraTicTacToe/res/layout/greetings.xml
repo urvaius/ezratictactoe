@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     
-    android:background="@drawable/stars"
+    android:background="@drawable/ezra"
     android:orientation="vertical" 
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/ezratitle" />
 
     <ImageView
@@ -21,7 +21,7 @@
         android:layout_height="60dip"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="133dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/quit1" />
 
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="60dip"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="700dp"
         android:background="@drawable/options1" />
 
     <ImageView
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="580dp"
         android:src="@drawable/player2play" />
 
     <ImageView
@@ -46,7 +46,7 @@
         android:layout_height="60dip"
         android:layout_below="@drawable/ezratitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="500dp"
         android:background="@drawable/player1" />
 
 </RelativeLayout>
