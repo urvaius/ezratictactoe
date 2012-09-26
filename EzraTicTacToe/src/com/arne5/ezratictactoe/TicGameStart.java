@@ -27,7 +27,7 @@ public class TicGameStart extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.greetings);
         
-        
+        //test for more graphics etc
         final ImageView iv_new_game = (ImageView) findViewById(R.id.new_game);
         final ImageView iv_options = (ImageView) findViewById(R.id.options);
         //final ImageView iv_help = (ImageView) findViewById(R.id.help);
