@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class TicGameStart extends Activity {
+public class CopyOfTicGameStart extends Activity {
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class TicGameStart extends Activity {
         //test for more graphics etc
         final ImageView iv_new_game = (ImageView) findViewById(R.id.new_game);
         final ImageView iv_options = (ImageView) findViewById(R.id.options);
-        
+        //final ImageView iv_help = (ImageView) findViewById(R.id.help);
         final ImageView iv_quit = (ImageView) findViewById(R.id.quit);
         final ImageView iv_2player = (ImageView) findViewById(R.id.iv2player);
         
@@ -38,7 +38,7 @@ public class TicGameStart extends Activity {
         
         iv_new_game.setOnClickListener(welcome_listener);
         iv_options.setOnClickListener(welcome_listener);
-       
+        //iv_help.setOnClickListener(welcome_listener);
         iv_quit.setOnClickListener(welcome_listener);
         iv_2player.setOnClickListener(welcome_listener);
         
@@ -77,10 +77,10 @@ public class TicGameStart extends Activity {
         
         switch(id) {
         case NAME_DIALOG_ID:
-        	mdialog.setContentView(R.layout.name_dialog_1);
-    		mdialog.setTitle("Player Name");
+        	mdialog.setContentView(R.layout.name_dialog_2);
+    		mdialog.setTitle("Player Names");
     		mdialog.setCancelable(true);
-    		final EditText nameonlyp1 = (EditText) mdialog.findViewById(R.id.nameonlyp1);
+    		
     		//final EditText namep1 = (EditText) mdialog.findViewById(R.id.namep1);
     		//final EditText namep2 = (EditText) mdialog.findViewById(R.id.namep2);
         
@@ -88,12 +88,11 @@ public class TicGameStart extends Activity {
     		ok_b.setOnClickListener(new OnClickListener() {
     			public void onClick(View v) {
     				//change_skin();
-    				game_mode =1;
-    				player_name_2 = "Kindle";//nameonlyp1.getText();
-    				player_name_1 = nameonlyp1.getText();
+    				//player_name_2 = namep1.getText();
+    				//player_name_1 = namep2.getText();
     				score_player_1 = 0;
     				score_player_2 = 0;
-    				new_game(nameonlyp1.getText());
+    				//new_game(namep2.getText());
     				dismissDialog(1);
     			}
     		});
