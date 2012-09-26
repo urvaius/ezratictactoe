@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -589,6 +590,7 @@ public class TicGameStart extends Activity {
      */
     public void set_score(int player_number) {
     	TextView tv = (TextView) findViewById(R.id.scoreboard);
+    	tv.setTextColor(Color.GREEN);
     	
     	if (player_number == 1)
     		score_player_1 += 1;
@@ -598,7 +600,7 @@ public class TicGameStart extends Activity {
     	
     	// player name and number relation.
     	if (game_mode == 1) {
-    		player_name_1 = "Computer";
+    		player_name_1 = "Kindle";
     	}
     		
     	CharSequence score_txt = 
