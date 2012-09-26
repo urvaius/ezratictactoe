@@ -93,8 +93,8 @@ public class TicGameStart extends Activity {
     			public void onClick(View v) {
     				//change_skin();
     				game_mode =1;
-    				player_name_2 = "Kindle";//nameonlyp1.getText();
-    				player_name_1 = nameonlyp1.getText();
+    				player_name_2 = nameonlyp1.getText();//"Kindle";//nameonlyp1.getText();
+    				player_name_1 = "KINDLE"; //nameonlyp1.getText();
     				score_player_1 = 0;
     				score_player_2 = 0;
     				new_game(nameonlyp1.getText());
